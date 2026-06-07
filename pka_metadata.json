@@ -1,0 +1,15 @@
+{
+  "total_documents": 3,
+  "document_sources": [
+    "permenkes_73_2016.txt",
+    "referensi_klinis.txt",
+    "sop_operasional.txt"
+  ],
+  "total_chunks": 266,
+  "vocab_size": 7718,
+  "chunk_size": 400,
+  "chunk_overlap": 50,
+  "top_k": 3,
+  "sim_threshold": 0.1,
+  "groq_model": "llama-3.3-70b-versatile"
+}

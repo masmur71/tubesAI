@@ -1,0 +1,9 @@
+product,full_name,mean_daily_sales,std_daily,cv,zero_pct,total_sold,movement_cat,volatility_cat,risk_label,is_sparse
+M01AB,M01AB (Acetic acid derivatives - Antiinflamasi),5.034,2.738,0.5439,1.9,10600.9,Medium-Moving,Medium Volatility,SEDANG,False
+M01AE,M01AE (Propionic acid derivatives - Antiinflamasi),3.896,2.133,0.5476,1.7,8204.6,Medium-Moving,Medium Volatility,SEDANG,False
+N02BA,N02BA (Salicylic acid - Analgesik),3.88,2.384,0.6144,3.7,8172.2,Slow-Moving,Medium Volatility,TINGGI,False
+N02BE,N02BE (Anilide - Paracetamol),29.917,15.591,0.5211,1.2,63005.4,Fast-Moving,Medium Volatility,RENDAH,False
+N05B,N05B  (Anxiolytics - Antiansietas),8.854,5.606,0.6331,2.0,18645.7,Fast-Moving,Medium Volatility,RENDAH,False
+N05C,N05C  (Hypnotics/Sedatives),0.594,1.093,1.8415,67.9,1250.0,Slow-Moving,High Volatility,KRITIS,True
+R03,R03   (Drugs for obstructive airway - Antiastma),5.512,6.429,1.1663,23.0,11608.8,Fast-Moving,High Volatility,SEDANG,False
+R06,R06   (Antihistamines),2.9,2.416,0.833,12.2,6107.8,Slow-Moving,Medium Volatility,TINGGI,False

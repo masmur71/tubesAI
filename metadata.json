@@ -1,0 +1,38 @@
+{
+  "atc_cols": [
+    "M01AB",
+    "M01AE",
+    "N02BA",
+    "N02BE",
+    "N05B",
+    "N05C",
+    "R03",
+    "R06"
+  ],
+  "atc_names": {
+    "M01AB": "M01AB (Acetic acid derivatives - Antiinflamasi)",
+    "M01AE": "M01AE (Propionic acid derivatives - Antiinflamasi)",
+    "N02BA": "N02BA (Salicylic acid - Analgesik)",
+    "N02BE": "N02BE (Anilide - Paracetamol)",
+    "N05B": "N05B  (Anxiolytics - Antiansietas)",
+    "N05C": "N05C  (Hypnotics/Sedatives)",
+    "R03": "R03   (Drugs for obstructive airway - Antiastma)",
+    "R06": "R06   (Antihistamines)"
+  },
+  "modelable": [
+    "M01AB",
+    "M01AE",
+    "N02BA",
+    "N02BE",
+    "N05B",
+    "R03",
+    "R06"
+  ],
+  "sparse": [
+    "N05C"
+  ],
+  "date_min": "2014-01-02",
+  "date_max": "2019-10-08",
+  "total_rows": 2106,
+  "avg_mape": 75.69
+}

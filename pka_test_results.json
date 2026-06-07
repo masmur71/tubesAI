@@ -1,0 +1,156 @@
+[
+  {
+    "category": "Regulasi",
+    "query": "Apa kewajiban apoteker dalam pelayanan informasi obat menurut Permenkes 73 2016?",
+    "answer": "Berdasarkan konteks yang disediakan, kewajiban apoteker dalam pelayanan informasi obat menurut Permenkes 73 2016 adalah memberikan informasi mengenai obat kepada pasien. Pelayanan Informasi Obat (PIO) harus didokumentasikan untuk membantu penelusuran kembali dalam waktu yang relatif singkat. Dokumentasi tersebut harus mencakup beberapa hal, antara lain: Topik Pertanyaan, Tanggal dan waktu Pelayanan Informasi Obat diberikan, Metode Pelayanan Informasi Obat, Data pasien, Uraian pertanyaan, Jawaban pertanyaan, Referensi, dan Metode pemberian jawaban.\n\nSumber: permenkes_73_2016.txt",
+    "sources": [
+      "permenkes_73_2016.txt"
+    ],
+    "fallback": false,
+    "top_score": 0.1946
+  },
+  {
+    "category": "Regulasi",
+    "query": "Bagaimana prosedur pemantauan terapi obat di apotek menurut standar kefarmasian?",
+    "answer": "Pemantauan Terapi Obat (PTO) merupakan proses yang memastikan bahwa seorang pasien mendapatkan terapi obat yang efektif dan terjangkau dengan memaksimalkan efikasi dan meminimalkan efek samping. Dokumentasi pelaksanaan pemantauan terapi obat dilakukan dengan menggunakan Formulir 9 sebagaimana terlampir. Selain itu, hasil pemantauan yang telah dibuat oleh Apoteker harus dikomunikasikan dengan tenaga kesehatan terkait untuk mengoptimalkan tujuan terapi.\n\nSumber: permenkes_73_2016.txt",
+    "sources": [
+      "permenkes_73_2016.txt"
+    ],
+    "fallback": false,
+    "top_score": 0.2297
+  },
+  {
+    "category": "Regulasi",
+    "query": "Apa yang dimaksud dengan MESO dan siapa yang bertanggung jawab melaksanakannya?",
+    "answer": "Informasi ini tidak tersedia dalam dokumen yang ada. Tidak ada penjelasan tentang MESO dalam konteks yang diberikan.\n\nSumber: permenkes_73_2016.txt, sop_operasional.txt",
+    "sources": [
+      "permenkes_73_2016.txt",
+      "sop_operasional.txt"
+    ],
+    "fallback": false,
+    "top_score": 0.1453
+  },
+  {
+    "category": "Regulasi",
+    "query": "Apa saja standar pelayanan kefarmasian yang wajib dipenuhi apotek?",
+    "answer": "Berdasarkan konteks yang disediakan, terutama pada bagian yang merujuk pada \"Standar Pelayanan Kefarmasian\" dalam Peraturan Menteri Kesehatan, disebutkan bahwa Apotek wajib mengikuti Standar Pelayanan Kefarmasian sebagaimana diatur dalam Peraturan Menteri ini. Namun, konteks yang disediakan tidak secara eksplisit menyebutkan apa saja standar pelayanan kefarmasian yang wajib dipenuhi apotek.\n\nInformasi ini tidak tersedia secara lengkap dalam dokumen yang ada. Oleh karena itu, tidak dapat diberikan jawaban yang spesifik tentang standar pelayanan kefarmasian yang wajib dipenuhi apotek berdasarkan konteks yang disediakan.\n\nSumber: permenkes_73_2016.txt",
+    "sources": [
+      "permenkes_73_2016.txt"
+    ],
+    "fallback": false,
+    "top_score": 0.2488
+  },
+  {
+    "category": "Regulasi",
+    "query": "Bagaimana ketentuan penyimpanan obat narkotika di apotek menurut regulasi?",
+    "answer": "Obat narkotika dan psikotropika disimpan dalam lemari khusus yang terkunci ganda (double lock), terpisah dari obat lain, sesuai ketentuan Peraturan Menteri Kesehatan yang berlaku. Kunci lemari narkotika hanya boleh dipegang oleh apoteker penanggung jawab.\n\nSumber: sop_operasional.txt",
+    "sources": [
+      "sop_operasional.txt"
+    ],
+    "fallback": false,
+    "top_score": 0.1961
+  },
+  {
+    "category": "Prosedural",
+    "query": "Bagaimana prosedur penerimaan dan verifikasi resep dokter di apotek?",
+    "answer": "Prosedur penerimaan dan verifikasi resep dokter di apotek melibatkan beberapa langkah. Pertama, apoteker atau Tenaga Teknis Kefarmasian (TTK) menerima resep dari pasien atau keluarga pasien di loket penerimaan resep. Langkah pertama yang dilakukan adalah verifikasi administratif, yaitu memeriksa kelengkapan identitas dokter penulis resep, meliputi nama dokter, nomor Surat Izin Praktik (SIP), dan alamat. Tujuan dari prosedur ini adalah memastikan setiap resep yang diterima apotek telah memenuhi kelengkapan administratif dan klinis sebelum obat disiapkan.\n\nSumber: sop_operasional.txt",
+    "sources": [
+      "sop_operasional.txt"
+    ],
+    "fallback": false,
+    "top_score": 0.3428
+  },
+  {
+    "category": "Prosedural",
+    "query": "Apa saja yang harus diperiksa saat menerima obat dari distributor PBF?",
+    "answer": "❌ Error HTTP: 429 — {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ktgjbpxafeq91tywmwv50r55` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 10746, Requested 1729. Please try again in 2.375s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n",
+    "sources": [
+      "sop_operasional.txt",
+      "permenkes_73_2016.txt"
+    ],
+    "fallback": false,
+    "top_score": 0.2169
+  },
+  {
+    "category": "Prosedural",
+    "query": "Bagaimana cara menangani obat yang sudah kedaluwarsa di apotek?",
+    "answer": "Obat yang sudah kedaluwarsa di apotek harus ditangani sesuai dengan ketentuan peraturan perundang-undangan yang berlaku. Apotek dapat mengembalikan obat kedaluwarsa kepada PBF (Pusat atau Penyalur Bahan Farmasi) asal apabila memungkinkan, atau memusnahkannya dengan disaksikan oleh pihak yang berwenang. Hal ini bertujuan untuk memastikan bahwa obat yang telah kedaluwarsa tidak sampai ke tangan pasien.\n\nSumber: sop_operasional.txt",
+    "sources": [
+      "sop_operasional.txt"
+    ],
+    "fallback": false,
+    "top_score": 0.1746
+  },
+  {
+    "category": "Prosedural",
+    "query": "Apa yang harus dilakukan apoteker sebelum menyerahkan obat kepada pasien?",
+    "answer": "❌ Error HTTP: 429 — {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ktgjbpxafeq91tywmwv50r55` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 11399, Requested 768. Please try again in 835ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n",
+    "sources": [
+      "sop_operasional.txt",
+      "permenkes_73_2016.txt"
+    ],
+    "fallback": false,
+    "top_score": 0.268
+  },
+  {
+    "category": "Prosedural",
+    "query": "Bagaimana prosedur pemesanan obat narkotika ke distributor?",
+    "answer": "❌ Error HTTP: 429 — {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ktgjbpxafeq91tywmwv50r55` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 11369, Requested 835. Please try again in 1.02s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n",
+    "sources": [
+      "sop_operasional.txt"
+    ],
+    "fallback": false,
+    "top_score": 0.2393
+  },
+  {
+    "category": "Klinis",
+    "query": "Apakah ibuprofen aman untuk pasien dengan riwayat tukak lambung?",
+    "answer": "❌ Error HTTP: 429 — {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ktgjbpxafeq91tywmwv50r55` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 11340, Requested 778. Please try again in 590ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n",
+    "sources": [
+      "referensi_klinis.txt"
+    ],
+    "fallback": false,
+    "top_score": 0.2781
+  },
+  {
+    "category": "Klinis",
+    "query": "Berapa dosis maksimal paracetamol per hari untuk dewasa?",
+    "answer": "❌ Error HTTP: 429 — {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ktgjbpxafeq91tywmwv50r55` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 11311, Requested 778. Please try again in 445ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n",
+    "sources": [
+      "referensi_klinis.txt"
+    ],
+    "fallback": false,
+    "top_score": 0.2413
+  },
+  {
+    "category": "Klinis",
+    "query": "Apa interaksi obat antara omeprazole dan clopidogrel?",
+    "answer": "❌ Error HTTP: 429 — {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ktgjbpxafeq91tywmwv50r55` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 11282, Requested 754. Please try again in 180ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n",
+    "sources": [
+      "referensi_klinis.txt",
+      "sop_operasional.txt"
+    ],
+    "fallback": false,
+    "top_score": 0.1857
+  },
+  {
+    "category": "Klinis",
+    "query": "Kapan metformin tidak boleh digunakan pada pasien diabetes?",
+    "answer": "Informasi ini tidak tersedia dalam dokumen yang ada. Konteks yang disediakan hanya menjelaskan tentang metformin sebagai pilihan pertama (first-line therapy) untuk pengelolaan diabetes mellitus tipe 2 dan cara kerjanya, tetapi tidak menyebutkan kapan metformin tidak boleh digunakan pada pasien diabetes.\n\nSumber: referensi_klinis.txt",
+    "sources": [
+      "referensi_klinis.txt"
+    ],
+    "fallback": false,
+    "top_score": 0.1434
+  },
+  {
+    "category": "Klinis",
+    "query": "Apakah antasida boleh diminum bersamaan dengan ciprofloxacin?",
+    "answer": "❌ Error HTTP: 429 — {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ktgjbpxafeq91tywmwv50r55` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 11863, Requested 875. Please try again in 3.69s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n",
+    "sources": [
+      "referensi_klinis.txt"
+    ],
+    "fallback": false,
+    "top_score": 0.2478
+  }
+]
