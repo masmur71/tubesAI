@@ -109,11 +109,9 @@ ATURAN UTAMA:
     except Exception as e:
         return f"❌ Error API: {str(e)}"
 
-
 # ==========================================
 # 5. SIDEBAR & NAVIGASI
 # ==========================================
-
 st.sidebar.title("Apotek Intelligence")
 st.sidebar.caption("Kelompok 2")
 
@@ -134,80 +132,113 @@ if pilihan_fitur == "📊 IAS (Dashboard Analitik)":
         st.error("Data IAS tidak ditemukan. Pastikan metadata.json, salesdaily_processed.csv, risk_classification.csv, dan forecast_results.json ada.")
         st.stop()
 
+    # Dropdown Tunggal di Sidebar (Kiri)
     with st.sidebar:
-        st.header("⚙️ Filter IAS")
-        selected_atc_trend = st.selectbox(
-            "Kategori Obat (Historis):", 
-            ias_metadata['atc_cols'], 
-            format_func=lambda x: ias_metadata['atc_names'][x]
-        )
-        selected_atc_forecast = st.selectbox(
-            "Kategori Obat (Forecasting):", 
+        st.header("⚙️ Filter Analisis")
+        selected_drug = st.selectbox(
+            "Pilih Kategori Obat:", 
             ias_metadata['modelable'], 
-            format_func=lambda x: ias_metadata['atc_names'][x]
+            format_func=lambda x: ias_metadata['atc_names'].get(x, x)
         )
 
-    st.title("📊 Apotek Intelligence - Kelompok 2")
-    st.subheader("Executive Dashboard: Intelligent Analytics System (IAS)")
-    st.markdown("Sistem Intelijen Bisnis untuk Optimasi Inventori & Prediksi Permintaan.")
-
-    # Hitung metrik KPI
-    total_kritis = len(df_risk[df_risk['risk_label'] == 'KRITIS'])
-    avg_mape = ias_metadata.get('avg_mape', 0)
-    rentang_waktu = f"{ias_metadata['date_min'][:4]} - {ias_metadata['date_max'][:4]}"
-
-    c1, c2, c3, c4 = st.columns(4)
-    c1.metric("Total Kategori ATC", len(ias_metadata['atc_cols']))
-    c2.metric("Akurasi Rata-rata", f"{100 - avg_mape:.1f}%", f"MAPE: {avg_mape}%", delta_color="inverse")
-    c3.metric("Item Risiko Kritis", total_kritis)
-    c4.metric("Rentang Historis", rentang_waktu)
+    # Tampilan Halaman Utama
+    st.title("📊 Dashboard Analitik Bisnis Apotek")
+    st.markdown("Sistem pemantauan inventori dan prediksi permintaan obat untuk optimasi stok.")
     st.divider()
 
-    tab1, tab2, tab3 = st.tabs(["📉 Analisis Historis", "📦 Pemetaan Risiko", "🔮 Proyeksi ARIMA"])
+    # Hitung metrik KPI Utama yang Lebih Relevan untuk Eksekutif
+    total_kritis = len(df_risk[df_risk['risk_label'] == 'KRITIS'])
+    avg_mape = ias_metadata.get('avg_mape', 0)
+    akurasi_sistem = 100 - avg_mape if avg_mape else "N/A"
+
+    c1, c2, c3 = st.columns(3)
+    c1.metric("📦 Total Kategori Obat", len(ias_metadata['atc_cols']))
+    c2.metric("⚠️ Item Berisiko Kritis", total_kritis, "Prioritas Pantau Manual", delta_color="inverse")
+    
+    if isinstance(akurasi_sistem, float):
+        c3.metric("🎯 Rata-rata Akurasi Prediksi Sistem", f"{akurasi_sistem:.1f}%", f"Error (MAPE): {avg_mape}%", delta_color="inverse")
+    else:
+        c3.metric("🎯 Rata-rata Akurasi Prediksi Sistem", "N/A")
+    
+    st.write("")
+
+    # Pengaturan Tab Visualisasi
+    tab1, tab2, tab3 = st.tabs(["📉 Tren Historis", "⚠️ Peta Risiko Inventori", "🔮 Proyeksi Permintaan"])
 
     with tab1:
-        fig_trend = px.line(df_sales, x='datum', y=selected_atc_trend, 
-                            title=f"Historis: {ias_metadata['atc_names'][selected_atc_trend]}",
-                            template="simple_white")
-        df_sales['MA30'] = df_sales[selected_atc_trend].rolling(30).mean()
-        fig_trend.add_scatter(x=df_sales['datum'], y=df_sales['MA30'], mode='lines', name='MA 30 Hari')
-        st.plotly_chart(fig_trend, width='stretch')
+        fig_trend = px.line(df_sales, x='datum', y=selected_drug, 
+                            title=f"Riwayat Penjualan: {ias_metadata['atc_names'].get(selected_drug, selected_drug)}",
+                            template="simple_white", labels={'datum': 'Tanggal', selected_drug: 'Jumlah Terjual'})
+        
+        df_sales['MA30'] = df_sales[selected_drug].rolling(30).mean()
+        fig_trend.add_scatter(x=df_sales['datum'], y=df_sales['MA30'], mode='lines', name='Rata-rata 30 Hari')
+        
+        st.plotly_chart(fig_trend, use_container_width=True)
 
     with tab2:
-        c_risk1, c_risk2 = st.columns([1, 2])
-        c_risk1.dataframe(df_risk[['product', 'risk_label', 'movement_cat', 'volatility_cat']], height=400)
+        # Penjelasan Risiko Murni (Tanpa Tindakan)
+        st.info("""
+        **Klasifikasi Kuadran Inventori:**
+        * 🔴 **KRITIS (Kanan Atas):** Tingkat penjualan sangat tinggi dengan fluktuasi permintaan yang sangat liar (acak).
+        * 🟠 **TINGGI:** Pergerakan barang cukup laris atau memiliki tingkat fluktuasi permintaan yang lumayan tinggi.
+        * 🟡 **SEDANG:** Penjualan berada di tingkat rata-rata dengan pergerakan yang tergolong stabil.
+        * 🟢 **RENDAH (Kiri Bawah):** Tingkat penjualan lambat dan sangat stabil, tanpa adanya lonjakan permintaan.
+        """)
         
         color_map = {'KRITIS':'#e74c3c', 'TINGGI':'#e67e22', 'SEDANG':'#f1c40f', 'RENDAH':'#2ecc71', 'TIDAK DIKETAHUI':'#95a5a6'}
         fig_risk = px.scatter(df_risk, x='mean_daily_sales', y='cv', color='risk_label',
                               text='product', color_discrete_map=color_map,
-                              title="Matriks Kuadran Inventori", template="simple_white")
+                              title="Peta Persebaran Risiko Obat", template="simple_white",
+                              labels={'mean_daily_sales': 'Tingkat Penjualan Harian', 'cv': 'Tingkat Ketidakpastian Permintaan (Volatilitas)'})
         fig_risk.update_traces(textposition='top right')
-        fig_risk.add_hline(y=1.0, line_dash="dash", line_color="red")
-        fig_risk.add_hline(y=0.5, line_dash="dash", line_color="orange")
-        c_risk2.plotly_chart(fig_risk, width='stretch')
+        fig_risk.add_hline(y=1.0, line_dash="dash", line_color="red", annotation_text="Sangat Volatil (Acak)")
+        fig_risk.add_hline(y=0.5, line_dash="dash", line_color="orange", annotation_text="Cukup Volatil")
+        st.plotly_chart(fig_risk, use_container_width=True)
 
     with tab3:
-        f_data = forecast_data[selected_atc_forecast]
-        m1, m2, m3 = st.columns(3)
-        m1.info(f"**Model:** ARIMA {f_data['order']}")
-        m2.info(f"**MAE:** {f_data['mae']}")
-        m3.info(f"**MAPE:** {f_data['mape']}%" if f_data['mape'] else "**MAPE:** N/A")
+        f_data = forecast_data.get(selected_drug, None)
         
-        fig_fc = go.Figure()
-        fig_fc.add_trace(go.Scatter(x=f_data['test_dates'], y=f_data['test_actual'], mode='lines', name='Aktual'))
-        fig_fc.add_trace(go.Scatter(x=f_data['test_dates'], y=f_data['test_pred'], mode='lines', name='ARIMA', line=dict(dash='dash')))
-        fig_fc.add_trace(go.Scatter(x=f_data['forecast_dates'], y=f_data['forecast_vals'], mode='lines+markers', name='Proyeksi 14 Hari'))
-        
-        fig_fc.update_layout(title=f"Proyeksi: {selected_atc_forecast}", template="simple_white")
-        st.plotly_chart(fig_fc, width='stretch')
+        if f_data:
+            prediksi_vals = f_data['forecast_vals']
+            estimasi_7_hari = sum(prediksi_vals[:7])
+            estimasi_14_hari = sum(prediksi_vals[:14])
+            
+            st.markdown(f"**Estimasi Kebutuhan Kedepan untuk: {ias_metadata['atc_names'].get(selected_drug, selected_drug)}**")
+            
+            m1, m2, m3 = st.columns(3)
+            m1.metric("Total Proyeksi (7 Hari Kedepan)", f"{int(round(estimasi_7_hari))} Unit")
+            m2.metric("Total Proyeksi (14 Hari Kedepan)", f"{int(round(estimasi_14_hari))} Unit")
+            
+            mape_val = f_data.get('mape')
+            if mape_val:
+                akurasi = 100 - float(mape_val)
+                m3.metric("Akurasi Prediksi Spesifik", f"{akurasi:.1f}%", f"Batas Kesalahan (MAPE): {mape_val}%", delta_color="inverse")
+            else:
+                m3.metric("Akurasi Prediksi", "N/A")
+            
+            st.write("")
+            
+            fig_fc = go.Figure()
+            fig_fc.add_trace(go.Scatter(x=f_data['test_dates'], y=f_data['test_actual'], mode='lines', name='Penjualan Aktual', line=dict(color='blue')))
+            fig_fc.add_trace(go.Scatter(x=f_data['forecast_dates'], y=f_data['forecast_vals'], mode='lines+markers', name='Proyeksi Sistem', line=dict(color='orange', width=3)))
+            
+            fig_fc.update_layout(title="Grafik Proyeksi Permintaan", template="simple_white", 
+                                 xaxis_title="Tanggal", yaxis_title="Jumlah Penjualan")
+            st.plotly_chart(fig_fc, use_container_width=True)
+        else:
+            st.warning("Data proyeksi tidak tersedia untuk kategori obat ini.")
 
 # ==========================================
 # 7. MODUL 2: PKA (PHARMACY KNOWLEDGE ASSISTANT)
 # ==========================================
 elif pilihan_fitur == "💊 PKA (Asisten AI)":
-    st.title("💊 Apotek Intelligence - Kelompok 2")
-    st.subheader("Asisten AI: Pharmacy Knowledge Assistant (PKA)")
-    st.caption("Prototipe RAG menggunakan TF-IDF & Llama-3 (Groq API)")
+    st.title("💊 Asisten AI Pengetahuan Farmasi")
+    st.subheader("Pharmacy Knowledge Assistant (PKA)")
+    st.caption("Pusat bantuan cerdas untuk pencarian regulasi dan informasi operasional apotek.")
+    
+    st.warning("""
+    ⚠️ **Pernyataan Penyangkalan (Disclaimer):** *Seluruh respon dihasilkan secara otomatis oleh Kecerdasan Buatan (AI) dengan merangkum dokumen internal/knowledge base yang terdaftar pada sistem. Mengingat karakteristik model komputasi generatif, jawaban yang disajikan bersifat referensial dan tidak dijamin 100% mutlak benar. Pengguna diwajibkan untuk tetap melakukan verifikasi silang (cross-check) terhadap dokumen fisik resmi sebelum menetapkan keputusan klinis atau operasional apotek.*
+    """)
     
     vectorizer, tfidf_matrix = load_pka_models()
     chunks, pka_metadata = load_pka_data()
@@ -219,7 +250,7 @@ elif pilihan_fitur == "💊 PKA (Asisten AI)":
     with st.sidebar:
         st.header("⚙️ Konfigurasi PKA")
         groq_api_key = st.text_input("Groq API Key", type="password")
-        st.caption(f"Knowledge Base: {pka_metadata.get('total_chunks', 0)} chunks")
+        # st.caption(f"Knowledge Base: {pka_metadata.get('total_chunks', 0)} dokumen terekam") -> TELAH DIHAPUS
 
     if "pka_messages" not in st.session_state:
         st.session_state.pka_messages = []
@@ -228,11 +259,11 @@ elif pilihan_fitur == "💊 PKA (Asisten AI)":
         with st.chat_message(msg["role"]):
             st.markdown(msg["content"])
             if msg.get("sources"):
-                st.caption(f"📚 Sumber: {', '.join(msg['sources'])}")
+                st.caption(f"📚 Referensi Dokumen: {', '.join(msg['sources'])}")
 
-    if prompt := st.chat_input("Tanyakan seputar regulasi apotek..."):
+    if prompt := st.chat_input("Tanyakan seputar regulasi, obat, atau operasional apotek..."):
         if not groq_api_key:
-            st.warning("⚠️ Masukkan Groq API Key di sidebar!")
+            st.warning("⚠️ Masukkan Groq API Key di sidebar untuk mulai menggunakan asisten AI!")
             st.stop()
 
         st.session_state.pka_messages.append({"role": "user", "content": prompt})
@@ -240,14 +271,14 @@ elif pilihan_fitur == "💊 PKA (Asisten AI)":
             st.markdown(prompt)
 
         with st.chat_message("assistant"):
-            with st.spinner("Mencari konteks..."):
+            with st.spinner("Mencari jawaban di basis pengetahuan apotek..."):
                 retrieved_data, is_fallback = retrieve(
                     prompt, vectorizer, tfidf_matrix, chunks, 
                     pka_metadata.get('top_k', 3), pka_metadata.get('sim_threshold', 0.10)
                 )
 
                 if is_fallback:
-                    jawaban = "Maaf, parameter pencarian gagal menemukan konteks di dokumen."
+                    jawaban = "Maaf, sistem tidak menemukan informasi terkait dalam basis pengetahuan apotek saat ini."
                     sumber = []
                 else:
                     llm_prompt = build_prompt(prompt, retrieved_data)
@@ -256,12 +287,12 @@ elif pilihan_fitur == "💊 PKA (Asisten AI)":
 
                 st.markdown(jawaban)
                 if sumber:
-                    st.caption(f"📚 Sumber: {', '.join(sumber)}")
+                    st.caption(f"📚 Referensi Dokumen: {', '.join(sumber)}")
                 
-                with st.expander("🔍 Inspeksi Transparansi (Debug)"):
+                with st.expander("🔍 Inspeksi Pencarian Dokumen (Mode Debug)"):
                     if not is_fallback:
                         for i, r in enumerate(retrieved_data, 1):
-                            st.write(f"**[{i}] Skor: {r['score']} | {r['source']}**")
+                            st.write(f"**[{i}] Tingkat Kecocokan: {r['score']} | {r['source']}**")
                             st.info(r['text'])
 
         st.session_state.pka_messages.append({"role": "assistant", "content": jawaban, "sources": sumber})
