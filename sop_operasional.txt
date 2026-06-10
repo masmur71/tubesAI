@@ -1,0 +1,131 @@
+STANDAR OPERASIONAL PROSEDUR (SOP) OPERASIONAL APOTEK
+Dokumen Internal Apotek | Berdasarkan Standar Praktik Kefarmasian Indonesia
+==========================================================================
+
+SOP-001: PENERIMAAN DAN VERIFIKASI RESEP DOKTER
+------------------------------------------------
+Tujuan: Memastikan setiap resep yang diterima apotek telah memenuhi kelengkapan administratif dan klinis sebelum obat disiapkan.
+
+Prosedur:
+Apoteker atau Tenaga Teknis Kefarmasian (TTK) menerima resep dari pasien atau keluarga pasien di loket penerimaan resep. Langkah pertama adalah melakukan verifikasi administratif, yaitu memeriksa kelengkapan identitas dokter penulis resep meliputi nama dokter, nomor Surat Izin Praktik (SIP), alamat praktik, dan tanda tangan atau paraf dokter. Selanjutnya diperiksa kelengkapan identitas pasien yang meliputi nama pasien, usia, berat badan (terutama untuk pasien anak), dan alamat pasien.
+
+Setelah verifikasi administratif, apoteker melakukan verifikasi farmasetik dan klinis. Verifikasi farmasetik mencakup pemeriksaan nama obat, kekuatan sediaan, bentuk sediaan, jumlah obat yang diminta, aturan pakai, dan cara pemberian. Verifikasi klinis mencakup penilaian kesesuaian indikasi, dosis, kemungkinan interaksi obat, duplikasi terapi, dan kontraindikasi berdasarkan informasi kondisi pasien yang tersedia.
+
+Apabila ditemukan ketidakjelasan atau ketidaklengkapan dalam resep, apoteker wajib menghubungi dokter penulis resep untuk konfirmasi sebelum obat disiapkan. Resep yang mengandung obat narkotika atau psikotropika harus mendapatkan perhatian khusus dan dicatat dalam buku register narkotika atau psikotropika sesuai ketentuan yang berlaku. Resep asli disimpan di apotek dan tidak dikembalikan kepada pasien; pasien diberikan salinan resep (copy resep) apabila diperlukan.
+
+Apoteker harus menolak resep yang tidak memenuhi persyaratan legal atau mengandung potensi bahaya bagi pasien, dan wajib memberikan penjelasan kepada pasien mengenai alasan penolakan tersebut serta menyarankan untuk kembali ke dokter penulis resep.
+
+Waktu penyelesaian target: resep non-racikan diselesaikan dalam 15 menit, resep racikan dalam 30 menit.
+
+--------------------------------------------------------------------------
+
+SOP-002: PENYIAPAN DAN PERACIKAN OBAT
+--------------------------------------
+Tujuan: Memastikan obat yang disiapkan atau diracik memenuhi standar mutu, keamanan, dan sesuai dengan permintaan resep.
+
+Prosedur:
+Penyiapan obat dilakukan oleh apoteker atau TTK di bawah supervisi apoteker di area dispensing yang bersih dan terpisah dari area penerimaan resep. Sebelum memulai penyiapan, petugas wajib mencuci tangan dengan sabun antiseptik dan menggunakan alat pelindung diri yang sesuai seperti sarung tangan dan masker bila diperlukan.
+
+Petugas mengambil obat dari rak penyimpanan dengan memperhatikan prinsip FEFO (First Expired First Out), yaitu obat dengan tanggal kedaluwarsa lebih awal digunakan lebih dahulu. Setiap pengambilan obat dilakukan dengan melakukan pengecekan tiga kali: saat mengambil dari rak, saat memindahkan ke wadah dispensing, dan saat memasukkan ke kemasan akhir. Pengecekan meliputi nama obat, kekuatan sediaan, bentuk sediaan, dan tanggal kedaluwarsa.
+
+Untuk obat racikan, peracikan dilakukan menggunakan peralatan yang bersih dan telah dikalibrasi. Timbangan diverifikasi akurasinya sebelum digunakan. Bahan obat ditimbang satu per satu dan dicatat beratnya. Proses pencampuran dilakukan dengan teknik yang sesuai untuk menjamin homogenitas sediaan. Wadah obat racikan diberi etiket yang mencantumkan nama pasien, nama sediaan, kekuatan, cara pemakaian, tanggal pembuatan, dan tanggal kedaluwarsa sediaan racikan.
+
+Setiap obat yang telah disiapkan diberi etiket yang jelas dan terbaca, mencantumkan nama pasien, nama obat, dosis, aturan pakai, peringatan khusus bila ada, dan nama apotek. Obat yang memerlukan kondisi penyimpanan khusus seperti refrigerasi diberi label tambahan yang menginformasikan hal tersebut kepada pasien.
+
+Sebelum diserahkan ke loket penyerahan, dilakukan pemeriksaan akhir oleh apoteker yang berbeda dari petugas yang menyiapkan obat (double-check system) untuk memverifikasi kesesuaian obat dengan resep.
+
+--------------------------------------------------------------------------
+
+SOP-003: PENYERAHAN OBAT DAN PEMBERIAN INFORMASI OBAT (PIO) KEPADA PASIEN
+--------------------------------------------------------------------------
+Tujuan: Memastikan pasien menerima obat yang benar disertai informasi yang cukup untuk penggunaan obat yang tepat, aman, dan efektif.
+
+Prosedur:
+Penyerahan obat dilakukan oleh apoteker langsung kepada pasien atau pendamping pasien yang sah. Apoteker memanggil nama pasien sesuai yang tertera di resep untuk memastikan obat diserahkan kepada orang yang tepat. Sebelum menyerahkan obat, apoteker melakukan konfirmasi identitas dengan menanyakan nama dan tanggal lahir pasien.
+
+Pada saat penyerahan obat, apoteker wajib memberikan Pelayanan Informasi Obat (PIO) secara komprehensif yang mencakup: nama obat dan kegunaannya, dosis dan frekuensi penggunaan, cara penggunaan yang benar (misalnya diminum sebelum atau sesudah makan, cara penggunaan inhaler, atau cara penggunaan obat tetes), lama penggunaan obat, efek samping yang mungkin terjadi dan cara mengatasinya, hal-hal yang harus dihindari selama menggunakan obat (makanan, minuman, atau aktivitas tertentu), cara penyimpanan obat yang benar, dan tindakan yang harus dilakukan apabila terjadi efek samping atau pasien lupa minum obat.
+
+Apoteker menggunakan bahasa yang mudah dipahami oleh pasien, menghindari istilah medis yang terlalu teknis kecuali bila pasien memiliki latar belakang kesehatan. Informasi diberikan secara lisan dan bila diperlukan disertai dengan informasi tertulis. Pasien diberikan kesempatan untuk bertanya dan apoteker wajib menjawab pertanyaan dengan jelas dan akurat.
+
+Untuk pasien lanjut usia, pasien dengan gangguan penglihatan atau pendengaran, atau pasien dengan tingkat pemahaman yang rendah, apoteker memberikan perhatian ekstra dan memastikan informasi yang diberikan benar-benar dipahami, bila perlu dengan melibatkan pendamping pasien.
+
+Apoteker mendokumentasikan setiap pemberian PIO dalam catatan pelayanan kefarmasian. Apabila pasien memerlukan pemantauan lanjutan, apoteker menjadwalkan konsultasi berikutnya atau memberikan nomor kontak apotek yang dapat dihubungi.
+
+--------------------------------------------------------------------------
+
+SOP-004: PENYIMPANAN OBAT DI APOTEK
+-------------------------------------
+Tujuan: Memastikan semua obat disimpan dalam kondisi yang menjamin stabilitas, mutu, keamanan, dan kemanjurannya hingga diserahkan kepada pasien.
+
+Prosedur:
+Obat diterima dari distributor resmi (Pedagang Besar Farmasi / PBF) dan langsung diperiksa kondisinya sebelum disimpan. Pemeriksaan mencakup: kesesuaian nama obat, kekuatan sediaan, dan jumlah dengan faktur pembelian; kondisi kemasan (tidak rusak, tidak bocor, tidak terbuka); tanggal kedaluwarsa minimal 6 bulan dari tanggal penerimaan; dan kondisi fisik obat (warna, bau, konsistensi).
+
+Obat disimpan berdasarkan klasifikasi berikut. Obat yang memerlukan suhu kamar (15–25°C) disimpan di rak penyimpanan yang terlindung dari paparan sinar matahari langsung, jauh dari sumber panas dan kelembaban tinggi. Obat yang memerlukan penyimpanan di lemari pendingin (2–8°C) seperti insulin, vaksin, suppositoria, dan beberapa jenis tetes mata disimpan di lemari es khusus obat yang suhunya dipantau dua kali sehari. Obat yang memerlukan penyimpanan beku (di bawah -20°C) disimpan di freezer khusus.
+
+Obat narkotika dan psikotropika disimpan dalam lemari khusus yang terkunci ganda (double lock), terpisah dari obat lain, sesuai ketentuan Peraturan Menteri Kesehatan yang berlaku. Kunci lemari narkotika hanya boleh dipegang oleh apoteker penanggung jawab. Stok narkotika dan psikotropika dicatat setiap hari dalam buku register khusus.
+
+Sistem penyimpanan menggunakan prinsip FIFO (First In First Out) untuk umum dan FEFO (First Expired First Out) untuk mencegah penggunaan obat yang hampir kedaluwarsa. Setiap rak diberi label yang jelas menunjukkan nama obat, kekuatan sediaan, dan lokasi penyimpanan. Pemeriksaan tanggal kedaluwarsa dilakukan setiap bulan; obat yang akan kedaluwarsa dalam tiga bulan ke depan diberi tanda khusus dan dipisahkan untuk diproses sesuai SOP penanganan obat kedaluwarsa.
+
+Area penyimpanan dijaga kebersihannya dan diperiksa kondisinya setiap hari. Suhu dan kelembaban ruang penyimpanan dicatat dua kali sehari menggunakan termohigrometer yang telah dikalibrasi. Rekaman kondisi penyimpanan disimpan sebagai dokumentasi selama minimal dua tahun.
+
+--------------------------------------------------------------------------
+
+SOP-005: PENGADAAN DAN PEMESANAN OBAT KE DISTRIBUTOR (PBF)
+-----------------------------------------------------------
+Tujuan: Memastikan proses pengadaan obat dilakukan secara terencana, legal, efisien, dan dari sumber yang terpercaya untuk menjamin ketersediaan obat yang berkelanjutan.
+
+Prosedur:
+Pengadaan obat dilakukan berdasarkan analisis kebutuhan yang mempertimbangkan data penjualan historis, tren permintaan, stok saat ini, dan lead time pengiriman dari distributor. Perencanaan pengadaan dilakukan setiap minggu oleh apoteker penanggung jawab bersama staf administrasi.
+
+Apotek hanya melakukan pemesanan obat kepada Pedagang Besar Farmasi (PBF) yang memiliki izin resmi dari Kementerian Kesehatan RI dan BPOM. Pemesanan obat keras, narkotika, dan psikotropika wajib menggunakan Surat Pesanan (SP) resmi yang ditandatangani oleh apoteker penanggung jawab. Pemesanan narkotika menggunakan SP narkotika khusus yang hanya dapat memesan satu jenis narkotika per surat pesanan. Pemesanan psikotropika menggunakan SP psikotropika yang dapat mencantumkan beberapa jenis psikotropika.
+
+Saat penerimaan barang dari PBF, dilakukan pemeriksaan kesesuaian antara barang yang diterima dengan faktur dan surat pesanan. Pemeriksaan meliputi nama obat, kekuatan sediaan, jumlah, nomor batch, tanggal kedaluwarsa, kondisi kemasan, dan keaslian produk. Apabila ditemukan ketidaksesuaian, barang dikembalikan kepada PBF disertai berita acara pengembalian.
+
+Titik pemesanan ulang (reorder point) ditetapkan untuk setiap produk berdasarkan rata-rata penjualan harian dikalikan lead time ditambah safety stock. Apabila stok suatu produk mencapai atau di bawah reorder point, sistem secara otomatis memberi notifikasi kepada penanggung jawab pengadaan. Stok minimum dan maksimum dievaluasi setiap tiga bulan berdasarkan data penjualan terkini.
+
+Seluruh dokumen pengadaan termasuk surat pesanan, faktur, dan berita acara penerimaan disimpan secara teratur dan dapat diakses untuk keperluan audit atau inspeksi dari instansi berwenang.
+
+--------------------------------------------------------------------------
+
+SOP-006: PENANGANAN OBAT KEDALUWARSA DAN OBAT RUSAK
+----------------------------------------------------
+Tujuan: Memastikan obat yang telah kedaluwarsa atau rusak tidak sampai ke tangan pasien dan dimusnahkan sesuai ketentuan yang berlaku.
+
+Prosedur:
+Pemeriksaan obat kedaluwarsa dan rusak dilakukan secara rutin setiap bulan oleh apoteker atau TTK yang ditugaskan. Pemeriksaan mencakup seluruh area penyimpanan termasuk rak display, lemari pendingin, dan gudang. Obat yang ditemukan kedaluwarsa, rusak secara fisik (kemasan bocor, berubah warna, berubah konsistensi), atau yang diragukan kualitasnya segera dipisahkan dari stok aktif.
+
+Obat yang telah dipisahkan diberi label merah bertuliskan "TIDAK UNTUK DIJUAL — OBAT KEDALUWARSA / RUSAK" dan disimpan di area karantina yang terpisah dan terkunci. Data obat yang dikarantina dicatat dalam formulir obat kedaluwarsa yang mencantumkan nama obat, kekuatan sediaan, jumlah, nomor batch, tanggal kedaluwarsa, dan tanggal dikarantina.
+
+Pemusnahan obat kedaluwarsa dan rusak dilakukan sesuai ketentuan peraturan perundang-undangan yang berlaku. Obat kedaluwarsa dikembalikan kepada PBF asal apabila memungkinkan, atau dimusnahkan oleh apotek dengan disaksikan oleh pihak yang berwenang. Pemusnahan narkotika dan psikotropika kedaluwarsa dilakukan dengan prosedur khusus yang melibatkan Dinas Kesehatan setempat dan BPOM. Berita acara pemusnahan dibuat dan ditandatangani oleh pihak-pihak yang menyaksikan pemusnahan, kemudian dilaporkan kepada instansi berwenang sesuai ketentuan.
+
+Kerugian akibat obat kedaluwarsa dicatat dan dievaluasi setiap bulan sebagai indikator efisiensi manajemen persediaan. Evaluasi ini digunakan sebagai bahan pertimbangan dalam perbaikan sistem perencanaan pengadaan.
+
+--------------------------------------------------------------------------
+
+SOP-007: PELAYANAN OBAT TANPA RESEP (OTC) DAN SWAMEDIKASI
+----------------------------------------------------------
+Tujuan: Memastikan pasien yang membeli obat tanpa resep mendapatkan produk yang tepat, informasi yang memadai, dan dirujuk ke dokter apabila kondisinya memerlukan penanganan medis lebih lanjut.
+
+Prosedur:
+Pelayanan obat tanpa resep dimulai dengan skrining keluhan dari pasien. Apoteker atau TTK menggali informasi keluhan menggunakan metode WWHAM: Who (siapa yang sakit), What (apa keluhan utamanya), How long (sudah berapa lama), Action (apa yang sudah dilakukan), Medication (obat apa yang sudah digunakan).
+
+Berdasarkan informasi yang diperoleh, apoteker menentukan apakah keluhan pasien dapat ditangani dengan obat OTC (obat bebas atau obat bebas terbatas) yang tersedia di apotek, atau apakah pasien perlu dirujuk ke dokter. Kondisi yang harus segera dirujuk ke dokter antara lain: gejala yang sudah berlangsung lebih dari 3–5 hari tanpa perbaikan, gejala yang berat atau memburuk dengan cepat, gejala yang tidak lazim atau tidak spesifik, pasien dengan kondisi kronis seperti diabetes atau gangguan ginjal, ibu hamil atau menyusui, dan bayi di bawah usia 2 tahun.
+
+Apabila swamedikasi dianggap tepat, apoteker merekomendasikan produk yang sesuai dengan mempertimbangkan keamanan, efektivitas, dan kondisi spesifik pasien. Apoteker memberikan penjelasan mengenai cara penggunaan, dosis yang tepat, lama penggunaan, efek samping yang mungkin terjadi, dan kapan harus kembali ke apotek atau ke dokter apabila gejala tidak membaik.
+
+Apoteker mendokumentasikan pelayanan swamedikasi yang diberikan termasuk keluhan pasien, rekomendasi produk, dan informasi yang diberikan. Dokumentasi ini berguna untuk pemantauan dan evaluasi kualitas pelayanan swamedikasi di apotek.
+
+--------------------------------------------------------------------------
+
+SOP-008: PENCATATAN DAN PELAPORAN PENGGUNAAN NARKOTIKA DAN PSIKOTROPIKA
+-----------------------------------------------------------------------
+Tujuan: Memastikan seluruh penggunaan, penerimaan, dan pengeluaran obat narkotika dan psikotropika tercatat dengan lengkap, akurat, dan dilaporkan sesuai ketentuan peraturan perundang-undangan.
+
+Prosedur:
+Setiap penerimaan dan pengeluaran obat narkotika dicatat dalam buku register narkotika pada hari yang sama dengan transaksi terjadi. Pencatatan mencakup tanggal transaksi, nama dan alamat pasien (untuk pengeluaran berdasarkan resep), nama dokter penulis resep, nama obat narkotika, kekuatan sediaan, jumlah yang diterima atau dikeluarkan, saldo stok, dan paraf apoteker. Hal yang sama berlaku untuk psikotropika yang dicatat dalam buku register psikotropika.
+
+Stok fisik narkotika dan psikotropika diperiksa dan dicocokkan dengan catatan register setiap hari oleh apoteker penanggung jawab. Apabila ditemukan selisih antara stok fisik dan catatan, investigasi dilakukan segera untuk mengidentifikasi penyebab selisih dan tindakan korektif yang diperlukan.
+
+Laporan penggunaan narkotika dan psikotropika dibuat setiap bulan dan dikirimkan kepada Dinas Kesehatan Kabupaten/Kota dan Badan Pengawas Obat dan Makanan (BPOM) melalui sistem pelaporan elektronik yang ditetapkan oleh pemerintah. Laporan mencakup saldo awal bulan, penerimaan selama bulan berjalan, pengeluaran selama bulan berjalan, dan saldo akhir bulan untuk setiap jenis narkotika dan psikotropika. Laporan harus dikirimkan paling lambat tanggal 10 bulan berikutnya.
+
+Seluruh dokumen terkait narkotika dan psikotropika termasuk surat pesanan, faktur, resep asli, dan laporan bulanan disimpan minimal selama tiga tahun dan harus dapat ditunjukkan sewaktu-waktu apabila ada pemeriksaan dari instansi berwenang.

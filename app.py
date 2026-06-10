@@ -176,24 +176,23 @@ if pilihan_fitur == "📊 IAS (Dashboard Analitik)":
         st.plotly_chart(fig_trend, use_container_width=True)
 
     with tab2:
-        # Penjelasan Risiko Murni (Tanpa Tindakan)
-        st.info("""
-        **Klasifikasi Kuadran Inventori:**
-        * 🔴 **KRITIS (Kanan Atas):** Tingkat penjualan sangat tinggi dengan fluktuasi permintaan yang sangat liar (acak).
-        * 🟠 **TINGGI:** Pergerakan barang cukup laris atau memiliki tingkat fluktuasi permintaan yang lumayan tinggi.
-        * 🟡 **SEDANG:** Penjualan berada di tingkat rata-rata dengan pergerakan yang tergolong stabil.
-        * 🟢 **RENDAH (Kiri Bawah):** Tingkat penjualan lambat dan sangat stabil, tanpa adanya lonjakan permintaan.
-        """)
-        
         color_map = {'KRITIS':'#e74c3c', 'TINGGI':'#e67e22', 'SEDANG':'#f1c40f', 'RENDAH':'#2ecc71', 'TIDAK DIKETAHUI':'#95a5a6'}
         fig_risk = px.scatter(df_risk, x='mean_daily_sales', y='cv', color='risk_label',
                               text='product', color_discrete_map=color_map,
-                              title="Peta Persebaran Risiko Obat", template="simple_white",
-                              labels={'mean_daily_sales': 'Tingkat Penjualan Harian', 'cv': 'Tingkat Ketidakpastian Permintaan (Volatilitas)'})
+                              title="Visualisasi Matriks Risiko (Movement Rate vs. Volatilitas)", template="simple_white",
+                              labels={'mean_daily_sales': 'Kecepatan Pergerakan (Rata-rata Penjualan)', 'cv': 'Volatilitas Permintaan (CV)'})
         fig_risk.update_traces(textposition='top right')
-        fig_risk.add_hline(y=1.0, line_dash="dash", line_color="red", annotation_text="Sangat Volatil (Acak)")
-        fig_risk.add_hline(y=0.5, line_dash="dash", line_color="orange", annotation_text="Cukup Volatil")
+        fig_risk.add_hline(y=1.0, line_dash="dash", line_color="red", annotation_text="Batas Volatilitas Tinggi")
+        fig_risk.add_hline(y=0.5, line_dash="dash", line_color="orange", annotation_text="Batas Volatilitas Sedang")
         st.plotly_chart(fig_risk, use_container_width=True)
+
+        # Penjelasan Risiko singkat di bawah grafik
+        st.caption("""
+        **Klasifikasi Risiko:**
+        * 🟢 **Rendah:** Obat laris dengan permintaan stabil. Paling aman dan mudah dikelola.
+        * 🟡/🟠 **Sedang:** Tingkat penjualan dan fluktuasi menengah. Membutuhkan pemantauan standar.
+        * 🔴 **Tinggi (Kritis):** Obat jarang laku tapi permintaannya sangat acak/fluktuatif. Paling rawan menyebabkan *overstock* dan kerugian finansial.
+        """)
 
     with tab3:
         f_data = forecast_data.get(selected_drug, None)
@@ -250,7 +249,6 @@ elif pilihan_fitur == "💊 PKA (Asisten AI)":
     with st.sidebar:
         st.header("⚙️ Konfigurasi PKA")
         groq_api_key = st.text_input("Groq API Key", type="password")
-        # st.caption(f"Knowledge Base: {pka_metadata.get('total_chunks', 0)} dokumen terekam") -> TELAH DIHAPUS
 
     if "pka_messages" not in st.session_state:
         st.session_state.pka_messages = []
